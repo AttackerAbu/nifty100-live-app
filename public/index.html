@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NIFTY100 Live</title>
+    <style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu;max-width:900px;margin:40px auto;padding:0 16px}</style>
+  </head>
+  <body>
+    <h1>NIFTY100 Live</h1>
+    <p>Backend is running. Try the health & quotes endpoints:</p>
+    <ul>
+      <li><a href="/api/health">/api/health</a></li>
+      <li><a href="/api/quotes?tickers=HAL,INFY,TCS">/api/quotes?tickers=HAL,INFY,TCS</a></li>
+    </ul>
+    <p>To generate an access token, open:<br>
+      <code id="login"></code>
+    </p>
+    <script>
+      document.getElementById('login').textContent = 'https://kite.trade/connect/login?api_key=YOUR_API_KEY&v=3';
+    </script>
+  </body>
+</html>
